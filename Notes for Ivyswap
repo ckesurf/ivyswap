@@ -13,6 +13,9 @@ check out:
 backbone.js
 
 
+About testing:
+We are going to manually test the functionality of our whole site before we finalize each commit.
+
 
 Current changes
 
@@ -20,4 +23,13 @@ added a header
 added the gem files from sample app
 -bootstrap
 -worked on scss
+
+-gave a partial for a header and footer
+
+--done--
+
+add a home page
+-- signup
+-- link functionality
+
 
