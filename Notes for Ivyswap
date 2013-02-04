@@ -1,4 +1,23 @@
 Notes for Ivyswap
 
 Model for product
-- image_url (should we use a an api like imgur or something for our image hosting??)
+- image_url (should we use an api like imgur or something for our image hosting??)
+- use gravatar for now then hopefully be able to use Facebook
+
+products needs
+
+pings?
+
+
+check out:
+backbone.js
+
+
+
+Current changes
+
+added a header
+added the gem files from sample app
+-bootstrap
+-worked on scss
+
