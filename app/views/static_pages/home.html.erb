@@ -1,8 +1,11 @@
-<% provide(:title, 'Home') %>
-<h1>Home page</h1>
-<p>
-  <a href="localhost:3000">Ivy Swap</a>
-  --A trusted market place exclusively for Columbia University students.
-
-  Signup / Login goes here
-</p>
+<div class="center hero-unit">
+  <% provide(:title, 'Home') %>
+  <h1>Home page</h1>
+  <p>
+    <a href="localhost:3000">Ivy Swap</a>
+    --A trusted market place exclusively for Columbia   University students.  
+  
+    Login goes here
+  </p>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
