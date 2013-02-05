@@ -1,6 +1,6 @@
 IvyswapApp::Application.routes.draw do
 
-  get "users/new"
+  #get "users/new"
 
   root to: 'static_pages#home'
 
@@ -10,6 +10,7 @@ IvyswapApp::Application.routes.draw do
   match '/about',   to: 'static_pages#about' 
 
   resources :products
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
