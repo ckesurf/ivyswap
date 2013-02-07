@@ -1,9 +1,9 @@
 class StaticPagesController < ApplicationController
   
   def home
-  	if signed_in ?
-  	  @product = current_user.product.all
-	  @feed_items = current_user.feed.paginate(page: params[:page])
+    if signed_in?
+      @product  = current_user.products.build
+      @feed_items = current_user.feed.paginate(page: params[:page])
     end
   end
 
