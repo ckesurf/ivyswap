@@ -13,4 +13,12 @@
 
 class Product < ActiveRecord::Base
   attr_accessible :description, :image_url, :price, :title
+
+  belongs_to :user
+
+  validates :description, presence: true, length: { maximum: 500 }
+  validates :user_id, presence:true
+
+
+  default_scope order: 'products.created_at DESC'
 end
