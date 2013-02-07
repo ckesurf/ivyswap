@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_filter :signed_in_user only: [:create, :destroy]
+  before_filter :signed_in_user, only: [:create, :destroy]
 
   # GET /products
   # GET /products.json
@@ -42,17 +42,24 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = Product.new(params[:product])
+    @product = current_user.products.build(params[:product])
 
-    respond_to do |format|
+    #respond_to do |format|
+
       if @product.save
-        format.html { redirect_to @product, :notice => 'Product was successfully created.' }
-        format.json { render :json => @product, :status => :created, :location => @product }
+        #format.html { redirect_to @product, :notice => 'Product was successfully created.' }
+        #format.json { render :json => @product, :status => :created, :location => @product }
+        flash[:success] = "Micropost created!"
+        redirect_to root_url
       else
-        format.html { render :action => "new" }
-        format.json { render :json => @product.errors, :status => :unprocessable_entity }
+        @feed_items = []
+        #format.html { render :action => "new" }
+        #format.json { render :json => @product.errors, :status => :unprocessable_entity }
+        render 'static_pages/home'
       end
-    end
+
+    #end
+
   end
 
   # PUT /products/1

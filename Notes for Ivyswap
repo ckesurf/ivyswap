@@ -39,3 +39,14 @@ check out the user index for a long lists of postings
 check out admin user if needed
 
 need to fix path after login
+
+
+lookup: index migrations
+
+rails generate migration add_index_to_products_user_id
+
+class AddIndexToProductsUserId < ActiveRecord::Migration
+  def change
+  	add_index :products, [:user_id, :created_at]
+  end
+end
