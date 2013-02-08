@@ -10,7 +10,7 @@
     </aside>
     <div class="span8">
       <h3>Listings from other students</h3>
-      <%= render 'shared/feed' %>
+      <%= render  partial: 'shared/product', collection: @products %>
     </div>
   </div>  
 <% else %>
