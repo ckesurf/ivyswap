@@ -12,13 +12,18 @@
   <div class="span8">
     <% if @user.products.any? %>
       <h3>Your Listings</h3>
-      <ol class="products">
-        <%= render @products %>
-      </ol>
+        <div class="products">
+
+        <table>
+          <%= render @products %>
+        </table>
       <%= will_paginate @products %>
     <% end %>
-  </div>
+      </div>
 
+<br />
+
+<%= link_to 'New product', new_product_path %>
 
 
 </div>
