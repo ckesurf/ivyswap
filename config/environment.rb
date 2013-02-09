@@ -5,8 +5,8 @@ require File.expand_path('../application', __FILE__)
 IvyswapApp::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => "sendgridusername",
-  :password => "sendgridpassword",
+  :user_name => "bennapp",
+  :password => "tannerdont",
   :domain => "cuex.herokuapp.com",
   :address => "smtp.sendgrid.net",
   :port => 587,
