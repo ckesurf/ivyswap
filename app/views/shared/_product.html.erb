@@ -3,8 +3,15 @@
     <p> <%= product.price %> </p>
     <%= image_tag(product.image_url, class: 'list_image') %>
 
-  <span class="description"><%= product.description %></span>
+  <span class="description">
+  	<%= product.description %>
+  </span>
+  
   <span class="timestamp">
     Posted <%= time_ago_in_words(product.created_at) %> ago.
   </span>
+
+  <%= link_to 'Buy', product, class: "btn btn-large btn-primary" %><br/>
+
+
 </li>
