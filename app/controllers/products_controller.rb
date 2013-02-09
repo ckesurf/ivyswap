@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
       if @product.save
         #format.html { redirect_to @product, :notice => 'Product was successfully created.' }
         #format.json { render :json => @product, :status => :created, :location => @product }
-        flash[:success] = "Micropost created!"
+        flash[:success] = "You posted #{@product.title}!"
         redirect_to root_url
       else
         @feed_items = []
