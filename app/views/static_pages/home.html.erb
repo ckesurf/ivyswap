@@ -1,21 +1,23 @@
 <% if signed_in? %>
-  <div class="row give-margin-left ">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-       <%= render 'shared/product_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>Listings from other students</h3>
-      <%= render  partial: 'shared/product', collection: @products %>
+    <div class="hero-unit ">
+      <div class="row give-margin-left user-box-parent ">
+        <aside class="span4 user-box ">
+          <section>
+            <%= render 'shared/user_info' %>
+          </section>
+          <section>
+           <%= render 'shared/product_form' %>
+          </section>
+        </aside>
+        <div class="span8 give-padding-left give-border-left">
+          <h3>Items for sale</h3>
+          <%= render  partial: 'shared/product', collection: @products %>
+        </div>
+      </div>
     </div>
-  </div>  
 <% else %>
    <div class="row">
-      <div class="hero-unit span7 center-box    ">
+      <div class="hero-unit span7 center-box ">
         <% provide(:title, 'Home') %>
         <h1><span class="color-blue">C</span>olumbia E<span class="color-blue">x</span>change</h1>
         <BR/>

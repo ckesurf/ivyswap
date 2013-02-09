@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('.show-product-form').click(function(){
        console.log("bitches");
         $(".product-form-closed").removeClass("product-form-closed");
-        $('.show-product-form').hide();
+        $('.show-product-form').fadeOut();
 
 
     });
