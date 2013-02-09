@@ -1,9 +1,10 @@
-<div class= "product-listing">
-
+<li>
   <p> <%= product.title %> </p>
-  <p>Product description: <%= product.description %> </p>
-  <p> <%= product.price %>
+    <p> <%= product.price %> </p>
+    <%= image_tag(product.image_url, class: 'list_image') %>
 
-  
-
-</div>
+  <span class="description"><%= product.description %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(product.created_at) %> ago.
+  </span>
+</li>
