@@ -15,6 +15,7 @@ class Product < ActiveRecord::Base
   attr_accessible :description, :image_url, :price, :title
 
   belongs_to :user
+  #has_one :upload, dependent: destroy
 
   validates :description, presence: true, length: { maximum: 500 }
   validates :user_id, presence:true
