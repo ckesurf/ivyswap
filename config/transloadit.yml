@@ -1,0 +1,6 @@
+auth:
+  key     : '29bae409591640cb93bfb70867c2f741'
+  secret  : '7330a74a4795bcf80bfad9bb726e6ff7bbd75f86'
+  duration: 1800 # 30 minute validity period for signed upload forms
+
+templates:
