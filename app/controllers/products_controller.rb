@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
       format.html # show.html.erb
       format.json { render :json => @product }
     end
-#    @buyer = User.find(current_user.id)
+
     @seller = User.find(@product.user_id)
     Notifier.contact(current_user, @seller).deliver
 
@@ -73,7 +73,7 @@ class ProductsController < ApplicationController
   # PUT /products/1.json
   def update
     @product = Product.find(params[:id])
-
+   
     respond_to do |format|
       if @product.update_attributes(params[:product])
         format.html { redirect_to @product, :notice => 'Product was successfully updated.' }
@@ -83,6 +83,7 @@ class ProductsController < ApplicationController
         format.json { render :json => @product.errors, :status => :unprocessable_entity }
       end
     end
+    #redirect_to current_user
   end
 
   # DELETE /products/1
@@ -91,9 +92,10 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.destroy
 
-    respond_to do |format|
-      format.html { redirect_to products_url }
-      format.json { head :no_content }
-    end
+    redirect_to current_user
+    #respond_to do |format|
+      #format.html { redirect_to @user }
+    #end
+
   end
 end
