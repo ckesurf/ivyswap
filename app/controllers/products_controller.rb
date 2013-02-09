@@ -21,10 +21,6 @@ class ProductsController < ApplicationController
       format.json { render :json => @product }
     end
 
-<<<<<<< HEAD
-#    @buyer = User.find(current_user.id)
-=======
->>>>>>> 1a90056257919693ca0c3a335631dd09965b1778
     @seller = User.find(@product.user_id)
     Notifier.contact(current_user, @seller).deliver
     
