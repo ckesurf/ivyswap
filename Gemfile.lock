@@ -31,6 +31,7 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
     bootstrap-sass (2.1.0.0)
     bootstrap-will_paginate (0.0.6)
@@ -54,9 +55,11 @@ GEM
     coffee-script-source (1.4.0)
     daemons (1.1.9)
     erubis (2.7.0)
+    eventmachine (1.0.0)
     eventmachine (1.0.0-x86-mingw32)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffi (1.3.1)
     ffi (1.3.1-x86-mingw32)
     hike (1.2.1)
     i18n (0.6.1)
@@ -71,7 +74,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.20.1)
     multi_json (1.5.0)
+    nokogiri (1.5.6)
     nokogiri (1.5.6-x86-mingw32)
+    pg (0.12.2)
     pg (0.12.2-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.4)
@@ -119,6 +124,7 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.5)
     sqlite3 (1.3.5-x86-mingw32)
     taps (0.3.24)
       rack (>= 1.0.1)
@@ -144,6 +150,7 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
