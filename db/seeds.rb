@@ -8,7 +8,15 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create(title: 'CoffeeScript',
+
+User.delete_all
+
+@user1 = User.create!(email: "c@columbia.edu", name: "chris", password: "asdfasdf",
+      password_confirmation: "asdfasdf")
+
+
+
+@user1.products.build(title: 'CoffeeScript',
   description: 
     %{<p>
         CoffeeScript is JavaScript done right. It provides all of JavaScript's
@@ -20,7 +28,7 @@ Product.create(title: 'CoffeeScript',
   image_url:   'cs.jpg',    
   price: 36.00)
 # . . .
-Product.create(title: 'Programming Ruby 1.9',
+@user1.products.build(title: 'Programming Ruby 1.9',
   description:
     %{<p>
         Ruby is the fastest growing and most exciting dynamic language
@@ -31,7 +39,7 @@ Product.create(title: 'Programming Ruby 1.9',
   price: 49.95)
 # . . .
 
-Product.create(title: 'Rails Test Prescriptions',
+@user1.products.build(title: 'Rails Test Prescriptions',
   description: 
     %{<p>
         <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
