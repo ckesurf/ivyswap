@@ -1,25 +1,34 @@
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<div class="hero-unit span7 center-box">
+    <% provide(:title, 'Sign up') %>
+    <h1>Sign up</h1>
+  <br/>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
+    <div class="row">
+      <div class="span3">
+        <%= form_for(@user) do |f| %>
 
-      <%= render 'shared/error_messages', object: f.object %>
+          <%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+          <%= f.label :name %>
+          <%= f.text_field :name %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+          <%= f.label :password %>
+          <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
-
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
-    <% end %>
-  </div>
+          <%= f.label :password_confirmation, "Confirmation" %>
+          <%= f.password_field :password_confirmation %>
+          <br/>
+          <%= f.submit "Create my account", class: "btn btn-large" %>
+        <% end %>
+      </div>
+      <div class="span3 no-account">
+        <div class="">
+          <p> Don't have an account? <%= link_to "sign up now!", signup_path %> You must have a Columbia email address to sign up. This ensures that you're
+            dealing with members of the school community. </p>
+        </div>
+      </div>
+    </div>
 </div>

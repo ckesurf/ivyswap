@@ -32,6 +32,10 @@ h1{
   background-color: $dark-grey-blue;
 }
 
+.navbar-inverse .nav > li > a {
+   color: #f4f4ee;
+}
+
 .color-blue{
   color: $light-grey-blue;
 }

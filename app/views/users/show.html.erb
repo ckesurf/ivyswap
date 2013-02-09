@@ -1,29 +1,29 @@
-<% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
 
-  <div class="span8">
-    <% if @user.products.any? %>
-      <h3>Your Listings</h3>
-        <div class="products">
+    <% provide(:title, @user.name) %>
+    <div class="row">
+      <aside class="span4">
+        <section>
+          <h1>
+            <%= gravatar_for @user %>
+            <%= @user.name %>
+          </h1>
+        </section>
+      </aside>
 
-        <table>
-          <%= render @products %>
-        </table>
-      <%= will_paginate @products %>
-    <% end %>
+      <div class="span8">
+        <% if @user.products.any? %>
+          <h3>Your Listings</h3>
+            <div class="products">
+
+            <table>
+              <%= render @products %>
+            </table>
+          <%= will_paginate @products %>
+        <% end %>
       </div>
+    </div>
+    <br />
 
-<br />
-
-<%= link_to 'New product', new_product_path %>
+    <%= link_to 'New product', new_product_path %>
 
 
-</div>
