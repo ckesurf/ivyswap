@@ -11,14 +11,13 @@
       <%= f.text_area :description, class: "product-form-closed" %>
 
 
-      
-
-
       <%= f.label :price, class: "product-form-closed" %>
       <%= f.text_field :price , class: "product-form-closed"%>
 
 
-      <%= render 'shared/image_upload' %>
+      <%= f.label :image_url, class: "product-form-closed" %>
+      <%= f.text_field :image_url , class: "product-form-closed"%>
+
 
       <%= f.submit "Post to listings", class: "btn btn-large post-listing" %>
     <% end %>

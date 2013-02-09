@@ -22,7 +22,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to CX!"
       # Deliver the signup_email
       #Notifier.signup_email(@user).deliver
-      redirect_to @user
+      redirect_to root_path
     else
       render 'new'
     end
@@ -58,7 +58,7 @@ class UsersController < ApplicationController
     def destroy
       User.find(params[:id]).destroy
       flash[:success] = "User destroyed."
-      redirect_to users_url
+      redirect_to root_path
   end
 
 end
