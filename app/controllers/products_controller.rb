@@ -31,6 +31,8 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render :json => @product }
+
+      redirect_to root_path
     end
   end
 
