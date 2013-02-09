@@ -1,6 +1,7 @@
 <li>
   <p> <%= product.title %> </p>
     <p> <%= product.price %> </p>
+     <p> Posted by: <%=product.user.name %>, <%=product.user.email %> </p>
     <%= image_tag(product.image_url, class: 'list_image') %>
 
   <span class="description">
