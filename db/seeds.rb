@@ -11,8 +11,8 @@ Product.delete_all
 
 User.delete_all
 
-@user1 = User.create!(email: "c@columbia.edu", name: "chris", password: "asdfasdf",
-      password_confirmation: "asdfasdf")
+@user1 = User.create!(email: "c@columbia.edu", name: "chris", password: "password",
+      password_confirmation: "password")
 
 
 
