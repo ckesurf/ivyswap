@@ -1,6 +1,39 @@
 @import "bootstrap";
 
 
+$dark-grey-blue: #3D4650;
+$light-grey-blue: #7C939D;
+$light-blue: #BDE4ED;
+
+
+.hero-unit{
+  h1{
+    color: $dark-grey-blue;
+  }
+}
+
+.navbar-color {
+  background-image: 0;
+  background-color: $dark-grey-blue;
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: $dark-grey-blue;
+  background-image: -moz-linear-gradient(top, $dark-grey-blue, $dark-grey-blue);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($dark-grey-blue), to($dark-grey-blue));
+  background-image: -webkit-linear-gradient(top, $dark-grey-blue, $dark-grey-blue);
+  background-image: -o-linear-gradient(top, $dark-grey-blue, $dark-grey-blue);
+  background-image: linear-gradient(to bottom, $dark-grey-blue, $dark-grey-blue);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF222222', endColorstr='#FF111111', GradientType=0);
+  border-color: #94c1c0;
+}
+
+.signup-btn{
+  margin-left: 36%;
+}
+
+
 @mixin box_sizing {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
@@ -13,12 +46,33 @@
   margin-left: 20px;
 }
 
-.center-box { float: none; margin-left: auto; margin-right: auto; }
+.no-margin{
+  margin: 0px;
+}
 
 .product-form-div{
-  height: 100px;
-  -webkit-transition: height 2s linear;
+  height: 500px;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
+
+
+.product-form-closed {
+  overflow: hidden;
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+
+.center-box { float: none; margin-left: auto; margin-right: auto; }
+
 
 html {
   overflow-y: scroll;

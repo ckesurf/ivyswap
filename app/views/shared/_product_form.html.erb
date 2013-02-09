@@ -1,19 +1,22 @@
-<div class= product-form-div product-form-closed>
-    <%= form_for(@product) do |f| %>
+<div class= "product-form-div product-form-closed">
+    <%= form_for(@product, html: {class: "product-form-closed no-margin"}) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :title %>
-      <%= f.text_field :title %>
+      <%= f.label :title, class: "product-form-closed" %>
+      <%= f.text_field :title, class: "product-form-closed" %>
 
-      <%= f.label :description %>
-      <%= f.text_area :description %>
+      <%= f.label :description, class: "product-form-closed" %>
+      <%= f.text_area :description, class: "product-form-closed" %>
 
-      <%= f.label :price %>
-      <%= f.password_field :price %>
+      <%= f.label :price, class: "product-form-closed" %>
+      <%= f.password_field :price, class: "product-form-closed" %>
 
-      <%= f.label :image_url, "Temp Paste image_url" %>
-      <%= f.password_field :image_url %>
+      <%= f.label :image_url, "Temp Paste image_url", class: "product-form-closed" %>
+      <%= f.password_field :image_url, class: "product-form-closed" %>
 
       <%= f.submit "Post to listings", class: "btn btn-large btn-primary" %>
     <% end %>
 </div>
+
+<%= link_to "post listing", "#",
+            class: "btn btn-large btn-primary center-box show-product-form" %>
