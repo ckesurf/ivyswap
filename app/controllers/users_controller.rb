@@ -3,12 +3,12 @@ class UsersController < ApplicationController
   before_filter :correct_user,   only: [:edit, :update]
 
   def show
-  	@user = User.find(params[:id])
+    @user = User.find(params[:id])
     @products = @user.products.paginate(page: params[:page])
   end
 
   def new
-  	@user = User.new
+    @user = User.new
   end
 
   #def index
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to CX!"
       # Deliver the signup_email
       Notifier.signup_email(@user).deliver
-      redirect_to @user
+      redirect_to root_path
     else
       render 'new'
     end
