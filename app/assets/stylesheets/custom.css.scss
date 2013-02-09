@@ -6,7 +6,22 @@ $light-grey-blue: #7C939D;
 $light-blue: #BDE4ED;
 
 
+h1{
+  color: $dark-grey-blue;
+}
+
+.signin-btn{
+
+}
+
+.no-account{
+  margin-top: 5%;
+  margin-left: 14%;
+}
+
 .hero-unit{
+  padding-top: 20px;
+  padding-bottom: 40px;
   h1{
     color: $dark-grey-blue;
   }
@@ -15,6 +30,10 @@ $light-blue: #BDE4ED;
 .navbar-color {
   background-image: 0;
   background-color: $dark-grey-blue;
+}
+
+.color-blue{
+  color: $light-grey-blue;
 }
 
 .navbar-inverse .navbar-inner {
