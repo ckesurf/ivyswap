@@ -14,17 +14,19 @@
     </div>
   </div>  
 <% else %>
-  <div class="center hero-unit">
-    <% provide(:title, 'Home') %>
-    <h1>Home page</h1>
-    <p>
-      <a href="localhost:3000">Columbia Exchange</a>
-      --A trusted market place exclusively for   Columbia   University students.    
-      
-        Login goes here  
-    </p>  
-    <%= link_to "Sign up now!", signup_path, 
-                                class: "btn btn-large btn-primary" %>
-    
+   <div class="row">
+      <div class="hero-unit span7 center-box    ">
+        <% provide(:title, 'Home') %>
+        <h1>Columbia Exchange</h1>
+        <p>
+          <a href="">Columbia Exchange</a>
+          --A trusted market place exclusively for   Columbia   University students to buy and sell stuff.
+
+            Login goes here
+        </p>
+        <%= link_to "Sign up now!", signup_path,
+                                    class: "btn btn-large btn-primary" %>
+
+      </div>
   </div>
 <% end %> 
