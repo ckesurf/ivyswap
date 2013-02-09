@@ -9,7 +9,7 @@ class Notifier < ActionMailer::Base
 
   def contact(buyer, seller)
   	mail( 
-  	:from => buyer.email
+  	:from => buyer.email,
   	:to => seller.email,
   	:subject => "Buy request!",
   	:body => "#{buyer.email} is interested in buying your product!
