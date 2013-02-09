@@ -14,7 +14,7 @@ IvyswapApp::Application.routes.draw do
   
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :products, only: [:create, :destroy]
+  resources :products
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
