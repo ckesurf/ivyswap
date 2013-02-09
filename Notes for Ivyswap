@@ -50,3 +50,6 @@ class AddIndexToProductsUserId < ActiveRecord::Migration
   	add_index :products, [:user_id, :created_at]
   end
 end
+
+
+Should we delete products/_form.html.erb

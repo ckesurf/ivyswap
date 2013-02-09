@@ -21,6 +21,11 @@ class ProductsController < ApplicationController
       format.json { render :json => @product }
     end
 
+#    @buyer = User.find(current_user.id)
+    @seller = User.find(@product.user_id)
+    Notifier.contact(current_user, @seller).deliver
+    
+
   end
 
   # GET /products/new

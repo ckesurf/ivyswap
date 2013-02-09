@@ -21,8 +21,8 @@ class UsersController < ApplicationController
       sign_in @user
       flash[:success] = "Welcome to CX!"
       # Deliver the signup_email
-      #Notifier.signup_email(@user).deliver
-      redirect_to root_path
+      Notifier.signup_email(@user).deliver
+      redirect_to @user
     else
       render 'new'
     end
