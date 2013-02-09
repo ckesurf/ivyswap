@@ -1,4 +1,4 @@
-<div class= "product-form-div product-form-closed">
+<div class= "product-form-div  product-form-closed">
     <%= form_for(@product, html: {class: "product-form-closed no-margin"}) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
@@ -14,9 +14,9 @@
       <%= f.label :image_url, "Temp Paste image_url", class: "product-form-closed" %>
       <%= f.text_field :image_url, class: "product-form-closed" %>
 
-      <%= f.submit "Post to listings", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Post to listings", class: "btn btn-large post-listing" %>
     <% end %>
 </div>
 
-<%= link_to "post listing", "#",
-            class: "btn btn-large btn-primary center-box show-product-form" %>
+<%= link_to "Add a listing", "#",
+            class: "btn center-box show-product-form" %>

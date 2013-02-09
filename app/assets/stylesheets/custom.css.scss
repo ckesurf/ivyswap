@@ -14,6 +14,29 @@ h1{
 
 }
 
+.user-box-parent{
+}
+
+.show-product-form{
+
+}
+
+.user-box{
+  height: 100%;
+  padding: 0 20px 0 20px;
+  //border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+}
+
+.give-border-right{
+  border-right: 1px solid #bbb;
+}
+
+.give-border-left{
+  border-left: 1px solid #bbb;
+}
+
+
 .no-account{
   margin-top: 5%;
   margin-left: 14%;
@@ -24,6 +47,11 @@ h1{
   padding-bottom: 40px;
   h1{
     color: $dark-grey-blue;
+  }
+  a:hover {
+    color: $light-grey-blue;
+    text-decoration: none;
+    background-color: #EDEDED;
   }
 }
 
@@ -68,13 +96,19 @@ h1{
 .give-margin-left {
   margin-left: 20px;
 }
+.give-padding-right {
+  padding-right: 20px;
+}
+.give-padding-left {
+  padding-left: 20px;
+}
 
 .no-margin{
   margin: 0px;
 }
 
 .product-form-div{
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -217,10 +251,19 @@ input {
   }
 }
 .description {
+  margin: 10px;
+  padding-right: 20px;
+  font-size:13px;
   display: block;
 }
 .timestamp {
   color: $grayLight;
+}
+
+.product-listing{
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 aside {
@@ -229,3 +272,5 @@ aside {
     margin-bottom: 5px;
   }
 }
+
+

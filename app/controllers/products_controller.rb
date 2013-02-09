@@ -57,7 +57,8 @@ class ProductsController < ApplicationController
         @feed_items = []
         #format.html { render :action => "new" }
         #format.json { render :json => @product.errors, :status => :unprocessable_entity }
-        render 'static_pages/home'
+        flash[:error] = "Your item must have a description."
+        redirect_to root_url
       end
 
     #end

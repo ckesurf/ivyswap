@@ -1,18 +1,24 @@
-<li>
-  <p> <%= product.title %> </p>
-    <p> <%= product.price %> </p>
-     <p> Posted by: <%=product.user.name %>, <%=product.user.email %> </p>
-    <%= image_tag(product.image_url, class: 'list_image') %>
+<li class="product-listing">
+  <%= image_tag(product.image_url, class: 'list_image') %>
 
-  <span class="description">
+  <h4><%= product.title %></h4>
+    <% unless product.price.nil? %>
+        Price:<%= product.price %>
+      <br/>
+    <% end %>
+
+
+
+  <p class="description" style="font-size: 13px; line-height:18px">
   	<%= product.description %>
-  </span>
-  
+  </p>
+
+  Posted by <%=product.user.name %>
   <span class="timestamp">
-    Posted <%= time_ago_in_words(product.created_at) %> ago.
+    (<%=product.user.email %>)
   </span>
 
-  <%= link_to 'Buy', product, class: "btn btn-large btn-primary" %><br/>
-
+  <%= time_ago_in_words(product.created_at) %> ago.
+  <%= link_to 'contact', product, class: "btn " %><br/>
 
 </li>
