@@ -23,3 +23,4 @@ class Product < ActiveRecord::Base
 
   default_scope order: 'products.created_at DESC'
 end
+
