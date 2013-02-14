@@ -1,55 +1,31 @@
 Notes for Ivyswap
 
-Model for product
-- image_url (should we use an api like imgur or something for our image hosting??)
-- use gravatar for now then hopefully be able to use Facebook
+- produc image_url (should we use an api like imgur or something for our image hosting??)
 
-products needs
+- USER IMG use gravatar for now then hopefully be able to use Facebook
 
-pings?
+-need to add catogory model functionality
+
+-see code academy for css/header
+	-add # items listed
+	-gravatar on header in drop down
+	-add breaks in header
+	-improve logo
+
+-improve email functionality
+	-add two step verification
+		-omniauth columbia email verification
+	-add drop down for message to sender
+	-change sender of email to something like reply_delete_to_delete@cx.org
+
+-improve listing drop down on front page 
+
+
 
 
 check out:
 backbone.js
 
 
-About testing:
-We are going to manually test the functionality of our whole site before we finalize each commit.
-
-
-Current changes
-
-added a header
-added the gem files from sample app
--bootstrap
--worked on scss
-
--gave a partial for a header and footer
-
---done--
-
-add a home page
--- signup
--- link functionality
-
-
-check out paginate for a long list
-check out the user index for a long lists of postings
-
-check out admin user if needed
-
-need to fix path after login
-
-
-lookup: index migrations
-
-rails generate migration add_index_to_products_user_id
-
-class AddIndexToProductsUserId < ActiveRecord::Migration
-  def change
-  	add_index :products, [:user_id, :created_at]
-  end
-end
-
-
-Should we delete products/_form.html.erb
+-About testing:
+	-add testing
