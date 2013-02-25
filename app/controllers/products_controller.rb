@@ -48,8 +48,13 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = current_user.products.build(params[:product])
+    p "!!!!!!!??????sdfgsdfgsdfgdsfgsdfgsdfgsdfg?"
 
+    @product = current_user.products.build(params[:product])
+    p "!!!!!!!???????"
+
+    p params
+    p "!!!!!!!"
     #respond_to do |format|
 
       if @product.save

@@ -12,16 +12,17 @@
 #
 
 class Product < ActiveRecord::Base
-  attr_accessible :description, :image_url, :price, :title, :cats
+  attr_accessible :description, :image_url, :price, :title, :category_id
 
   belongs_to :user
-  belongs_to :cats
+  belongs_to :category
+
 
   #has_one :upload, dependent: destroy
 
   validates :description, presence: true, length: { maximum: 500 }
   validates :user_id, presence:true
-
+  #validates :category_id, presence:true
 
   default_scope order: 'products.created_at DESC'
 end

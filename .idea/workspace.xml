@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8f03d4-7c3c-4dc1-af4c-02852ac0bcae" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\rails_projects\ivyswap\app\models\cats.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\ivyswap\db\migrate\20130213220328_create_cats.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\ivyswap\test\fixtures\cats.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\ivyswap\test\unit\cats_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_product_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_product_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ivyswap.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cc8f03d4-7c3c-4dc1-af4c-02852ac0bcae" time="1360814881521" ignored="false" />
+    <file path="/Dummy.txt" changelist="cc8f03d4-7c3c-4dc1-af4c-02852ac0bcae" time="1361820599547" ignored="false" />
     <file path="/product.rb" changelist="cc8f03d4-7c3c-4dc1-af4c-02852ac0bcae" time="1360817876055" ignored="false" />
     <file path="/cats.rb" changelist="cc8f03d4-7c3c-4dc1-af4c-02852ac0bcae" time="1360793445921" ignored="false" />
     <file path="/_product_form.html.erb" changelist="cc8f03d4-7c3c-4dc1-af4c-02852ac0bcae" time="1360818052219" ignored="false" />
@@ -33,19 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cats.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/cats.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="product.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="65" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+            <state line="14" column="65" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +58,7 @@
       <file leaf-file-name="_product.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_product.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="60" selection-start="221" selection-end="221" vertical-scroll-proportion="-5.8846154">
+            <state line="9" column="60" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,15 +76,8 @@
       <file leaf-file-name="products_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="16" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#152#314#0" expanded="false" />
-                <element signature="e#363#635#0" expanded="false" />
-                <element signature="e#688#873#0" expanded="false" />
-                <element signature="e#902#957#0" expanded="false" />
-                <element signature="e#1745#2219#0" expanded="false" />
-                <element signature="e#2274#2462#0" expanded="false" />
-              </folding>
+            <state line="42" column="16" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +85,7 @@
       <file leaf-file-name="_product_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_product_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="802" selection-end="802" vertical-scroll-proportion="0.5562016">
+            <state line="18" column="28" selection-start="738" selection-end="738" vertical-scroll-proportion="0.6171079">
               <folding />
             </state>
           </provider>
@@ -449,8 +437,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="0" width="683" height="738" extended-state="0" />
-    <editor active="true" />
+    <frame x="683" y="0" width="683" height="738" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -529,6 +517,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_product_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="12" selection-start="1052" selection-end="1052" vertical-scroll-proportion="-18.92" />
@@ -561,9 +556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
@@ -592,42 +585,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_product.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="60" selection-start="221" selection-end="221" vertical-scroll-proportion="-5.8846154">
+        <state line="9" column="60" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#152#314#0" expanded="false" />
-            <element signature="e#363#635#0" expanded="false" />
-            <element signature="e#688#873#0" expanded="false" />
-            <element signature="e#902#957#0" expanded="false" />
-            <element signature="e#1745#2219#0" expanded="false" />
-            <element signature="e#2274#2462#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cats.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+        <state line="42" column="16" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="65" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+        <state line="14" column="65" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_product_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="802" selection-end="802" vertical-scroll-proportion="0.5562016">
+        <state line="18" column="28" selection-start="738" selection-end="738" vertical-scroll-proportion="0.6171079">
           <folding />
         </state>
       </provider>
