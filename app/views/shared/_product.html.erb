@@ -1,12 +1,11 @@
 <ul class="product-listing">
   
+  <h4><%= product.title %></h4>
+
+
   <%= image_tag(product.image_url, class: 'list_image') %>
 
-  <h4><%= product.title %></h4>
-    <% unless product.price.nil? %>
-        Price:<%= product.price %>
-      <br/>
-    <% end %>
+
 
 
 
@@ -14,6 +13,11 @@
   	<%= product.description %>
   </p>
 
+    <% unless product.price.nil? %>
+        $<%= product.price %>
+      <br/>
+    <% end %>
+    
   Posted by <%=product.user.name %>
   <span class="timestamp">
     (<%=product.user.email %>)
