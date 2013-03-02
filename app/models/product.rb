@@ -12,7 +12,7 @@
 #
 
 class Product < ActiveRecord::Base
-  attr_accessible :description, :image_url, :price, :title, :category_id
+  attr_accessible :description, :image_url, :price, :title, :category_name
 
   belongs_to :user
   belongs_to :category

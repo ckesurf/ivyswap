@@ -1,13 +1,14 @@
 <ul class="product-listing">
   
+  
+
   <h4><%= product.title %></h4>
 
+  <p class="category" style="font-size: 18px; line-height:30px">Category:
+    <%= product.category_name %>
+  </p>
 
   <%= image_tag(product.image_url, class: 'list_image') %>
-
-
-
-
 
   <p class="description" style="font-size: 13px; line-height:18px">
   	<%= product.description %>

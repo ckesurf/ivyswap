@@ -9,14 +9,23 @@
            <%= render 'shared/product_form' %>
           </section>
         </aside>
+        
+        
+
+
         <div class="span8 give-padding-left give-border-left">
           <h3>Current Listings</h3>
           <%= render  partial: 'shared/product', collection: @products %>
         </div>
+
+
       </div>
     </div>
 <% else %>
-   <div class="row">
+  <div>
+   <body style="background:url(http://i.imgur.com/VGcbDWV.jpg) no-repeat; background-size:cover ">
+
+     <div class="row">
       <div class="hero-unit span7 center-box ">
         <% provide(:title, 'Home') %>
         <h1><span class="color-blue">C</span>olumbia E<span class="color-blue">x</span>change</h1>
@@ -29,5 +38,7 @@
                                     class: "btn btn-large signup-btn" %>
 
       </div>
+     </body> 
+    </div>
   </div>
-<% end %> 
+  <% end %>
