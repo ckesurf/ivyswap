@@ -23,8 +23,23 @@ class ProductsController < ApplicationController
 
 #    @buyer = User.find(current_user.id)
     @seller = User.find(@product.user_id)
-    Notifier.contact(current_user, @seller).deliver
     
+    #Notifier.contact(current_user, @seller).deliver
+    if :number_to_send_to
+      number_to_send_to = params[:number_to_send_to]
+   
+        twilio_sid = "abc123"
+        twilio_token = "foobar"
+        twilio_phone_number = "9099963987"
+   
+        @twilio_client = Twilio::REST::Client.new twilio_sid, twilio_token
+   
+        @twilio_client.account.sms.messages.create(
+          :from => "+1#{twilio_phone_number}",
+          :to => number_to_send_to,
+          :body => "So and so would like to buy your blah #{number_to_send_to}"
+      )
+    end
 
   end
 
@@ -100,4 +115,5 @@ class ProductsController < ApplicationController
     #end
 
   end
+
 end
